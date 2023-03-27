@@ -14,3 +14,10 @@ CREATE TABLE `ticket`.`tickets` (
 ENGINE = InnoDB;
 -- 
 
+-- tabla para cada municipio y su id
+CREATE TABLE `ticket`.`municipios` (
+    `id_municipio` INT(11) NOT NULL AUTO_INCREMENT ,
+    `municipio` VARCHAR(200) NOT NULL ,
+    PRIMARY KEY (`id_municipio`))
+ENGINE = InnoDB;
+-- 
