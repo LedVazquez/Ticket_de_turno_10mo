@@ -21,3 +21,10 @@ CREATE TABLE `ticket`.`municipios` (
     PRIMARY KEY (`id_municipio`))
 ENGINE = InnoDB;
 -- 
+
+-- tabla para relacionar cada ticket con el municipio y su respectivo numero
+CREATE TABLE `ticket`.`turnos` (
+    `id_municipio` INT(11) NOT NULL ,
+    `id_ticket` INT(11) NOT NULL )
+ENGINE = InnoDB;
+-- 
