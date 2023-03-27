@@ -1,0 +1,16 @@
+-- tabla de informacion del ticket
+CREATE TABLE `ticket`.`tickets` (
+    `id_ticket` INT(11) NOT NULL AUTO_INCREMENT ,
+    `nom_completo` VARCHAR(200) NOT NULL ,
+    `curp` VARCHAR(200) NOT NULL ,
+    `nombres` VARCHAR(200) NOT NULL ,
+    `paterno` VARCHAR(200) NOT NULL ,
+    `materno` VARCHAR(200) NOT NULL ,
+    `telefono` VARCHAR(200) NOT NULL ,
+    `celular` VARCHAR(200) NOT NULL ,
+    `email` VARCHAR(200) NOT NULL ,
+    `nivel` VARCHAR(200) NOT NULL ,
+    PRIMARY KEY (`id_ticket`))
+ENGINE = InnoDB;
+-- 
+
