@@ -26,5 +26,8 @@ ENGINE = InnoDB;
 CREATE TABLE `ticket`.`turnos` (
     `id_municipio` INT(11) NOT NULL ,
     `id_ticket` INT(11) NOT NULL )
-ENGINE = InnoDB;
+ENGINE = InnoDB;    
+-- query para crear indices en la tabla de turnos para poder relacionar las tablas
+ALTER TABLE `turnos` ADD INDEX(`id_municipio`);
+ALTER TABLE `turnos` ADD INDEX(`id_ticket`);
 -- 
