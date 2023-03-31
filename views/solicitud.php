@@ -6,7 +6,7 @@
     <link rel="stylesheet" href="../public/css/style.css" />
     <link rel="stylesheet" href="../public/css/bootstrap/bootstrap.css">
   </head>
-  <script src="js/val_ticket.js"></script>
+  <script src="../public/js/val_ticket.js"></script>
   <body>
     <section>
       <nav class="navbar navbar-expand-lg navbar-light bg-light">
@@ -91,14 +91,18 @@
           <label for="municipio">Municipio:</label>
           <select id="municipio" name="municipio">
           <?php
-              include ("../controllers/municipioController.php");
-              $munic = new municipios;
-              $municipios=$munic->get_municipios();
-
-              foreach ($municipios as $municipio){
-                  echo "<option>a</option>";
-              }
+              // include ("../controllers/municipioController.php");
+              // $munic = new municipiosController();
+              
+              // $municipias=$munic->get_municipios();
+              // $municipiogod=$municipias[0];
+              // // var_dump($municipias);
+              // // dd $municipias;
+              // // foreach ($municipias as $municipio){
+              //   echo "<option>waos</option>";
+              // // }
           ?>
+          <option value="">Saltillo</option>
           </select>
         </div>
         <div class="campo">

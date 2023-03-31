@@ -7,13 +7,13 @@
 		protected $id_municipio;
 		protected $municipio;
 		
-		public function __construct(
-			$id_municipio,
-			$municipio
-		){
-			$this->id_municipio=$id_municipio;
-			$this->municipio=$municipio;
-		}
+		// public function __construct(
+		// 	$id_municipio,
+		// 	$municipio
+		// ){
+		// 	$this->id_municipio=$id_municipio;
+		// 	$this->municipio=$municipio;
+		// }
 
 		//getters
 

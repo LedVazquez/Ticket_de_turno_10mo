@@ -52,7 +52,6 @@
 
 		function insertar_aspirante($obj){
             
-            $fecha=date("Y-m-d H:i:s");
             $sql="insert into tickets(";
             $sql.="id_ticket,";
             $sql.="nom_completo,";
@@ -95,6 +94,6 @@
             unset($obj);
             return $insertado;
         }//end function
-		
+
 	}
 ?>
