@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<database name="default" defaultIdMethod="native" namespace="\models" defaultPhpNamingMethod="underscore">
+  <table name="municipios" idMethod="native" phpName="Municipios">
+    <column name="id_municipio" phpName="IdMunicipio" type="INTEGER" primaryKey="true" autoIncrement="true" required="true"/>
+    <column name="municipio" phpName="Municipio" type="VARCHAR" size="200" required="true"/>
+    <vendor type="mysql">
+      <parameter name="Engine" value="InnoDB"/>
+    </vendor>
+  </table>
+  <table name="tickets" idMethod="native" phpName="Tickets">
+    <column name="id_ticket" phpName="IdTicket" type="INTEGER" primaryKey="true" autoIncrement="true" required="true"/>
+    <column name="nom_completo" phpName="NomCompleto" type="VARCHAR" size="200" required="true"/>
+    <column name="curp" phpName="Curp" type="VARCHAR" size="200" required="true"/>
+    <column name="nombres" phpName="Nombres" type="VARCHAR" size="200" required="true"/>
+    <column name="paterno" phpName="Paterno" type="VARCHAR" size="200" required="true"/>
+    <column name="materno" phpName="Materno" type="VARCHAR" size="200" required="true"/>
+    <column name="telefono" phpName="Telefono" type="VARCHAR" size="200" required="true"/>
+    <column name="celular" phpName="Celular" type="VARCHAR" size="200" required="true"/>
+    <column name="email" phpName="Email" type="VARCHAR" size="200" required="true"/>
+    <column name="nivel" phpName="Nivel" type="VARCHAR" size="200" required="true"/>
+    <column name="estatus" phpName="Estatus" type="INTEGER" required="true"/>
+    <vendor type="mysql">
+      <parameter name="Engine" value="InnoDB"/>
+    </vendor>
+  </table>
+  <table name="turnos" idMethod="native" phpName="Turnos">
+    <column name="id_municipio" phpName="IdMunicipio" type="INTEGER" required="true"/>
+    <column name="id_ticket" phpName="IdTicket" type="INTEGER" required="true"/>
+    <column name="numero" phpName="Numero" type="INTEGER" sqlType="int unsigned" required="true"/>
+    <vendor type="mysql">
+      <parameter name="Engine" value="InnoDB"/>
+    </vendor>
+  </table>
+  <table name="usuarios" idMethod="native" phpName="Usuarios">
+    <column name="id_usuario" phpName="IdUsuario" type="INTEGER" primaryKey="true" autoIncrement="true" required="true"/>
+    <column name="usuario" phpName="Usuario" type="VARCHAR" size="200" required="true"/>
+    <column name="pass" phpName="Pass" type="VARCHAR" size="200" required="true"/>
+    <vendor type="mysql">
+      <parameter name="Engine" value="InnoDB"/>
+    </vendor>
+  </table>
+</database>

@@ -1,0 +1,8 @@
+{
+    "propel": {
+        "paths": {
+            "schemaDir": "C:\\laragon\\www\\des_web\\par_2\\Ticket_de_turno_10mo\\vendor\\bin",
+            "phpDir": "C:\\laragon\\www\\des_web\\par_2\\Ticket_de_turno_10mo\\models"
+        }
+    }
+}
