@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dashboard</title>
+  </head>
+  <body>
+
+    <select id="opciones" onchange="mostrarScript()">
+      <option value="">Seleccione una opción</option>
+      <option value="Saltilo">Saltillo</option>
+      <option value="Arteaga">Arteaga</option>
+      <option value="Torreon">Torreon</option>
+    </select>
+
+    <h1>Saltillo</h1>
+
+    <canvas id="myChart"style="position: relative; height: 10vh; width: 25vw"></canvas>
+
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+    <script id="SaltilloChart">
+      var ctx = document.getElementById("myChart");
+      new Chart(ctx, {
+        type: "bar",
+        data: {
+          labels: ["Resuelto", "Pendiente"],
+          datasets: [
+            {
+              label: ["No. de tickets"],
+              backgroundColor: ["#CE5B65", "#1688A3"],
+              borderColor: ["black"],
+              data: [12, 19],
+              borderWidth: 1,
+            },
+          ],
+        },
+        options: {
+          scales: {
+            y: {
+              beginAtZero: true,
+            },
+          },
+        },
+      });
+    </script>
+
+    <h1>Arteaga</h1>
+
+    <canvas id="myChart2"style="position: relative; height: 10vh; width: 25vw"></canvas>
+
+    <script id="ArteagaChart">
+      var ctx = document.getElementById("myChart2");
+      new Chart(ctx, {
+        type: "bar",
+        data: {
+          labels: ["Resuelto", "Pendiente"],
+          datasets: [
+            {
+              label: ["No. de tickets"],
+              backgroundColor: ["#CE5B65", "#1688A3"],
+              borderColor: ["black"],
+              data: [5, 8],
+              borderWidth: 1,
+            },
+          ],
+        },
+        options: {
+          scales: {
+            y: {
+              beginAtZero: true,
+            },
+          },
+        },
+      });
+    </script>
+  </body>
+</html>
